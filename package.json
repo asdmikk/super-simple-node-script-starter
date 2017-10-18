@@ -6,14 +6,16 @@
   "scripts": {
     "start": "node lib/main.js",
     "build": "babel -d lib src",
-    "start:build": "npm run build && npm run start"
+    "start:build": "npm run build && npm run start",
+    "start:build:strict": "flow . && npm run start:build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0"
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.57.3"
   },
   "dependencies": {
     "nodemon": "^1.12.1"

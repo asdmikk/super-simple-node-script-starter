@@ -1,7 +1,10 @@
 // @flow
-
 import Cube from './Cube'
 
-const cube = new Cube()
+function main() {
+    const cube = new Cube()
+    console.log(cube.getMass())
+    console.log(cube.getMagicalNumber())
+}
 
-console.log(cube.getMass())
+main()
