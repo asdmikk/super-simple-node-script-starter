@@ -7,7 +7,8 @@
     "start": "node lib/main.js",
     "build": "babel -d lib src",
     "start:build": "npm run build && npm run start",
-    "start:build:strict": "flow . && npm run start:build"
+    "start:build:strict": "flow . && npm run start:build",
+    "watch": "watchman-make -p 'src/*' --run 'npm run build'"
   },
   "author": "",
   "license": "ISC",
